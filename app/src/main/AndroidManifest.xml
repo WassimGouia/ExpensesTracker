@@ -7,22 +7,22 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="PennyWise"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinanceTracker"
         tools:targetApi="31">
         <activity
             android:name=".NewAsset"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".AssetsList"
-            android:exported="false" />
+            android:exported="true" />
         <activity
-            android:name=".MainActivity3"
-            android:exported="false" />
+            android:name=".ExpensesHistory"
+            android:exported="true" />
         <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
+            android:name=".Home"
+            android:exported="true" />
         <activity
             android:name=".BarChartStat"
             android:exported="true">
