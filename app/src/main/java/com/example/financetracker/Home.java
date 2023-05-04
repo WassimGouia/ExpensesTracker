@@ -1,6 +1,8 @@
 package com.example.financetracker;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.text.DecimalFormat;
@@ -22,5 +24,7 @@ public class Home extends AppCompatActivity {
         String formattedMonthlyMoneySpent = decimalFormat.format(monthlyMoneySpent);
 
         monthlyMoneySpentValueTextView.setText(formattedMonthlyMoneySpent);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"})
+        Button button = findViewById(R.id.add_button);
     }
 }

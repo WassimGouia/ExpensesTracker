@@ -5,4 +5,9 @@
     <string name="monthly_money_spent_value">monthly_money_spent_value</string>
     <string name="show_more_history_button_text">show_more_history_button_text</string>
     <string name="statistics">Statistics</string>
+    <string-array name="options">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
 </resources>

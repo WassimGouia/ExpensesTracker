@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Asset"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edit_text_asset_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Asset Name"/>
+
+    <EditText
+        android:id="@+id/edit_text_asset_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Asset Value"/>
+
+    <Button
+        android:id="@+id/button_save_asset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+</LinearLayout>

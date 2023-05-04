@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BarChartStat">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bckgrd"
         android:scaleType="centerCrop"
-        />
+        android:src="@drawable/bckgrd" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,45 +20,71 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="16dp"
             android:text="@string/statistics"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:padding="16dp"/>
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/time_range_radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:checkedButton="@+id/monthly_radio_button">
+            android:checkedButton="@+id/monthly_radio_button"
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/daily_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Daily"
-                android:buttonTint="@color/daily_color"/>
+                android:buttonTint="@color/daily_color"
+                android:text="Daily" />
 
             <RadioButton
                 android:id="@+id/monthly_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Monthly"
-                android:buttonTint="@color/monthly_color"/>
+                android:buttonTint="@color/monthly_color"
+                android:text="Monthly" />
 
             <RadioButton
                 android:id="@+id/annually_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Annually"
-                android:buttonTint="@color/annually_color"/>
+                android:buttonTint="@color/annually_color"
+                android:text="Annually" />
 
         </RadioGroup>
 
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/statistics_bar_chart"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="399dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avg Per" />
+
+            <Spinner
+                android:id="@+id/dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/options"
+                android:spinnerMode="dropdown"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dynamic_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00 TND" />
 
     </LinearLayout>
 </RelativeLayout>

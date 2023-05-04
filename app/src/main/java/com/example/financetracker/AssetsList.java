@@ -11,4 +11,5 @@ public class AssetsList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assets_list);
     }
+
 }
